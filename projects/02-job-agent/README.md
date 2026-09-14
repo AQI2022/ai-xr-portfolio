@@ -6,6 +6,8 @@
 
 Agent 只能调用 `extract_candidate_skills`、`match_supplied_jobs` 和 `search_job_references`。模型不能替换用于评分的原始简历或绕过白名单。LLM 总结仅供参考，排序来自原文词条覆盖；无模型时明确返回 `deterministic-workflow`。
 
+实测本地 0.5B 模型能发出技能抽取调用，但后续规划可能输出无效 JSON。缺失的必要分析由只读确定性步骤完成，单独记录在 `fallback_trace`，状态标为 `workflow_fallback`。这不是全程模型自主规划成功的证明；保留失败与修复后的原始报告。
+
 ## 算法与工具
 
 技能别名表统一 Python、Unity、LLM、RAG、MCP 等中英文词条，匹配证据返回原文片段。显式必需技能权重 2、加分项权重 1；缺少显式要求时从 JD 推断，并标明 `requirements_inferred`。没有可识别要求时分数为 null，而不是制造 0% 或 100%。

@@ -3,7 +3,7 @@
 这是基于 TACO 和 YOLO11n 的训练、验证、权重保存、API 推理和浏览器展示系统。当前小样本模型效果较弱，适合作为实验与工程作品，不能作为成熟垃圾分类设备宣传。
 
 ```powershell
-python scripts/download_models.py
+python scripts/download_models.py --yolo
 python scripts/prepare_taco.py --count 32 --seed 42
 python experiments/train_detection.py --epochs 40 --name taco-40
 $env:AI_YOLO_MODEL="runs/taco-40/weights/best.pt"

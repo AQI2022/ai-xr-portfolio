@@ -24,6 +24,8 @@ def main():
     parser.add_argument("--reranker", action="store_true")
     parser.add_argument("--yolo", action="store_true")
     args = parser.parse_args()
+    if not any((args.qwen, args.embedding, args.reranker, args.yolo)):
+        parser.error("Select --qwen, --embedding, --reranker or --yolo")
     models = []
     if args.yolo:
         download("https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt", Path("models/yolo11n.pt"))

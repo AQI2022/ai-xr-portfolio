@@ -46,8 +46,9 @@
   ],
   "adapter_reload_max_abs_delta": 0.0,
   "trainable_parameters": 3584,
+  "total_parameters": 126912,
   "sample_question": "Describe the purpose of spatial anchors in mixed reality.",
   "sample_answer": "transcript transcript transcript transcript row transcript row transcript row",
-  "duration_seconds": 0.4818708000238985,
+  "duration_seconds": 0.8377230999758467,
   "scope": "Small original instructional dataset; workflow evidence, not a production capability benchmark."
 }

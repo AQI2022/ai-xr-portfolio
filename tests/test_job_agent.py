@@ -25,3 +25,17 @@ async def test_unauthorized_tool_and_bound():
     assert len(result["trace"]) == 2
     assert result["stop_reason"] == "step_limit"
     assert all("error" in t["result"] for t in result["trace"])
+    assert {t["tool"] for t in result["fallback_trace"]} == {"extract_candidate_skills", "match_supplied_jobs"}
+
+
+@pytest.mark.asyncio
+async def test_malformed_plan_has_transparent_recovery():
+    class Fake:
+        mode = "test-double"
+
+        async def chat(self, messages, tools=None):
+            return {"content": '{"tool": "extract_candidate_skills"}}'}
+    result = await run_job_agent("Python", [], Fake())
+    assert result["stop_reason"] == "workflow_fallback"
+    assert len(result["fallback_trace"]) == 2
+    assert not result["summary"].startswith("{")

@@ -2,6 +2,8 @@
 
 五个可在本机运行的 AI 工程项目，共用 FastAPI 后端、SQLite 数据层和浏览器演示界面；另附可构建的 Unity 2022 客户端。项目关注检索证据、模型工具调用、训练评估和跨端交互。
 
+[查看持续集成结果](https://github.com/AQI2022/ai-xr-portfolio/actions)
+
 这是 2026 年 9 月实现的 AI 辅助开发个人作品集，不是商业上线案例。默认无需 API Key；默认的证据摘录模式不冒充大模型。切换本地 Qwen 或兼容模型服务后使用真实生成与工具规划。
 
 ## 项目入口
@@ -11,6 +13,8 @@
 3. [垃圾目标检测](projects/03-waste-detection/README.md)：TACO 数据准备、YOLO 训练验证、图像检测 API 和前端标注框。
 4. [AI XR 多模态助手](projects/04-xr-multimodal-agent/README.md)：图像检测上下文、STT/TTS、Qwen、记忆、人工确认、Unity 场景动作。
 5. [Qwen LoRA 微调](projects/05-lora-finetuning/README.md)：回答区间掩码、真实训练、独立验证、适配器保存重载和推理。
+
+![匿名示例岗位的可解释匹配界面](evidence/demo-jobs.png)
 
 ## 5 分钟运行基础演示
 
@@ -65,6 +69,8 @@ python experiments/finetune.py --steps 24
 - TACO 微型数据集：24 张训练、8 张验证。3 epoch 基线 mAP50 为 0；40 epoch 的 mAP50 为 0.0671、Recall 为 0.0625，仍不足以支持实用垃圾分类。代码交付的是可复现训练和检测系统，不是高精度量产模型。
 - 本地 Qwen 实际产生场景旋转工具调用并进入人工确认；系统 TTS 生成的英语音频经 Whisper 转写成功。小模型曾漏引用，已增加引用校验失败后退回原文证据的保护。
 - Unity 2022.3.13f1c1 已完成 Windows 构建。未在本次工作中验证 HoloLens/OpenXR 真机、空间锚点或手势追踪。
+
+Unity 实际播放器另通过自动 HTTP 联调：确认前物体角度不变，确认后旋转 45°，详见 `evidence/unity-build.json`。该测试使用无图形模式，不等同于渲染或头显验收。
 
 ## 部署
 

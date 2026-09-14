@@ -1,8 +1,8 @@
 {
   "python": "3.12.4",
   "os": "Windows",
-  "cpu": "Intel i5-11400H (local validation host)",
-  "tests": 32,
+  "cpu": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "tests": 33,
   "failures": 0,
   "errors": 0,
   "ruff": "passed",
