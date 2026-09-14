@@ -1,0 +1,46 @@
+[
+  {
+    "weights": "models/yolo11n.pt",
+    "sample_id": "1289",
+    "result": {
+      "detections": [],
+      "width": 640,
+      "height": 480,
+      "latency_ms": 143.32,
+      "single_image_fps": 6.98,
+      "model": "yolo11n.pt",
+      "scope": "Model classes depend on loaded weights; COCO weights are not a trained waste taxonomy."
+    }
+  },
+  {
+    "weights": "runs/taco-40/weights/best.pt",
+    "sample_id": "1289",
+    "result": {
+      "detections": [
+        {
+          "label": "bag",
+          "class_id": 3,
+          "confidence": 0.31,
+          "xyxy": [
+            419.1,
+            204.88,
+            438.62,
+            220.6
+          ],
+          "xyxyn": [
+            0.65485,
+            0.42683,
+            0.68534,
+            0.45959
+          ]
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "latency_ms": 83.83,
+      "single_image_fps": 11.93,
+      "model": "best.pt",
+      "scope": "Model classes depend on loaded weights; COCO weights are not a trained waste taxonomy."
+    }
+  }
+]

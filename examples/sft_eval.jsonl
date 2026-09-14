@@ -1,0 +1,8 @@
+{"question":"Describe the purpose of spatial anchors in mixed reality.","answer":"Spatial anchors maintain the relationship between virtual content and a physical location as the device moves."}
+{"question":"What should happen when no reliable source answers a question?","answer":"The assistant should explain that the available evidence is insufficient rather than fabricate a claim."}
+{"question":"Explain why an API request should not freeze an XR frame.","answer":"Network work should run asynchronously while the main thread continues rendering and processing input."}
+{"question":"Which parameters are updated by low rank adaptation?","answer":"Low rank adapter matrices are updated while the pretrained base weights remain frozen."}
+{"question":"Does a lower training loss establish real world performance?","answer":"No. Independent validation and task evaluation are needed to assess generalization."}
+{"question":"How can a Unity scene action avoid accidental replay?","answer":"Use a session bound confirmation token that expires and can be consumed only once."}
+{"question":"检索结果的引用编号校验能说明什么？","answer":"它只能说明编号对应已返回的资料，不能代替对答案事实是否被资料支持的验证。"}
+{"question":"视觉模型的实验记录为什么必须注明设备？","answer":"推理耗时和吞吐量取决于设备、输入大小与运行配置，缺少这些信息就无法合理比较结果。"}

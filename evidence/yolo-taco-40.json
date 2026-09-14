@@ -1,0 +1,37 @@
+{
+  "dataset": "data/taco-mini/dataset.yaml",
+  "epochs": 40,
+  "image_size": 320,
+  "device": "cpu",
+  "platform": "Windows",
+  "torch": "2.14.0+cpu",
+  "precision": 0.9799767798667205,
+  "recall": 0.0625,
+  "map50": 0.06709736591092523,
+  "map50_95": 0.04644889573703133,
+  "median_pipeline_latency_ms": 51.601550017949194,
+  "reciprocal_median_fps": 19.3792628254802,
+  "timing_repeats": 10,
+  "latencies_ms": [
+    45.89099995791912,
+    46.232699998654425,
+    41.731699951924384,
+    51.044799969531596,
+    53.54270001407713,
+    66.28279993310571,
+    52.15830006636679,
+    49.64370001107454,
+    68.78099997993559,
+    53.84900001809001
+  ],
+  "duration_seconds": 118.8978065000847,
+  "trained_weights": "runs/taco-40/weights/best.pt",
+  "classes": {
+    "0": "bottle",
+    "1": "can",
+    "2": "cup",
+    "3": "bag",
+    "4": "other_litter"
+  },
+  "scope": "Real TACO mini training/validation. Tiny validation set; not production accuracy or full video FPS."
+}

@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      AI_PROVIDER: ${AI_PROVIDER:-extractive}
+      AI_LLM_BASE_URL: ${AI_LLM_BASE_URL:-http://host.docker.internal:11434/v1}
+      AI_LLM_MODEL: ${AI_LLM_MODEL:-qwen2.5:0.5b}
+      AI_LLM_API_KEY: ${AI_LLM_API_KEY:-}
+      AI_APP_API_KEY: ${AI_APP_API_KEY:-}
+    volumes:
+      - portfolio-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+volumes:
+  portfolio-data:

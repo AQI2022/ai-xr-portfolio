@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-xr-portfolio"
+version = "0.1.0"
+description = "Runnable AI and XR portfolio with evidence-based evaluation"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1",
+  "pydantic-settings>=2.5,<3", "numpy>=1.26,<3", "scikit-learn>=1.5,<2",
+  "pypdf>=5,<7", "python-docx>=1.1,<2", "python-multipart>=0.0.18,<1",
+  "Pillow>=10,<13", "rank-bm25>=0.2.2,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.24,<2", "ruff>=0.9,<1"]
+ml = ["torch>=2.3,<3", "transformers>=4.46,<5", "peft>=0.14,<1",
+      "accelerate>=1,<2", "ultralytics>=8.3,<9", "sentence-transformers>=3,<6"]
+mcp = ["mcp>=1.20,<2"]
+speech = ["faster-whisper>=1.1,<2", "pyttsx3>=2.90,<3"]
+
+[tool.setuptools.packages.find]
+include = ["ai_xr*"]
+
+[tool.setuptools.package-data]
+ai_xr = ["*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

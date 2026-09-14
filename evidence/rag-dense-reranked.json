@@ -1,0 +1,144 @@
+{
+  "mode": "sentence-transformer+bm25+rrf",
+  "embedding_model": "models/bge-small-zh",
+  "reranker_model": "models/ms-marco-reranker",
+  "cases": 12,
+  "recall_at_3": 1.0,
+  "mrr_at_3": 0.9583333333333334,
+  "median_latency_ms": 314.5001500379294,
+  "results": [
+    {
+      "query": "HoloLens 跟踪丢失如何处理",
+      "expected": "spatial_anchors.md",
+      "retrieved": [
+        "spatial_anchors.md",
+        "assembly.md",
+        "voice.md"
+      ],
+      "rank": 1,
+      "latency_ms": 316.2203000392765
+    },
+    {
+      "query": "localPosition 与 position 坐标有什么区别",
+      "expected": "spatial_anchors.md",
+      "retrieved": [
+        "spatial_anchors.md",
+        "assembly.md",
+        "performance.md"
+      ],
+      "rank": 1,
+      "latency_ms": 320.59550005942583
+    },
+    {
+      "query": "Profiler 如何分析 Unity 卡顿",
+      "expected": "performance.md",
+      "retrieved": [
+        "performance.md",
+        "spatial_anchors.md",
+        "voice.md"
+      ],
+      "rank": 1,
+      "latency_ms": 309.57939999643713
+    },
+    {
+      "query": "Unity 网络请求如何避免主线程阻塞",
+      "expected": "performance.md",
+      "retrieved": [
+        "performance.md",
+        "voice.md",
+        "spatial_anchors.md"
+      ],
+      "rank": 1,
+      "latency_ms": 334.2468999326229
+    },
+    {
+      "query": "RAG 的 Recall 和 MRR 是什么",
+      "expected": "rag_evaluation.md",
+      "retrieved": [
+        "rag_evaluation.md",
+        "lora.md",
+        "performance.md"
+      ],
+      "rank": 1,
+      "latency_ms": 344.7218999499455
+    },
+    {
+      "query": "RRF hybrid search 和 reranker",
+      "expected": "rag_evaluation.md",
+      "retrieved": [
+        "rag_evaluation.md",
+        "performance.md",
+        "spatial_anchors.md"
+      ],
+      "rank": 1,
+      "latency_ms": 301.5896000433713
+    },
+    {
+      "query": "制氢设备培训演示有哪些步骤",
+      "expected": "assembly.md",
+      "retrieved": [
+        "assembly.md",
+        "spatial_anchors.md",
+        "voice.md"
+      ],
+      "rank": 1,
+      "latency_ms": 362.1805999428034
+    },
+    {
+      "query": "场景动作确认令牌如何过期",
+      "expected": "assembly.md",
+      "retrieved": [
+        "assembly.md",
+        "voice.md",
+        "lora.md"
+      ],
+      "rank": 1,
+      "latency_ms": 292.12150000967085
+    },
+    {
+      "query": "STT TTS 语音数字人延迟",
+      "expected": "voice.md",
+      "retrieved": [
+        "voice.md",
+        "performance.md",
+        "spatial_anchors.md"
+      ],
+      "rank": 1,
+      "latency_ms": 307.0691000903025
+    },
+    {
+      "query": "声音克隆和系统 TTS 的区别",
+      "expected": "voice.md",
+      "retrieved": [
+        "assembly.md",
+        "voice.md",
+        "spatial_anchors.md"
+      ],
+      "rank": 2,
+      "latency_ms": 302.03159991651773
+    },
+    {
+      "query": "LoRA 低秩矩阵和 QLoRA 量化",
+      "expected": "lora.md",
+      "retrieved": [
+        "lora.md",
+        "assembly.md",
+        "rag_evaluation.md"
+      ],
+      "rank": 1,
+      "latency_ms": 312.78000003658235
+    },
+    {
+      "query": "微调 prompt token 为什么设为 -100",
+      "expected": "lora.md",
+      "retrieved": [
+        "lora.md",
+        "assembly.md",
+        "performance.md"
+      ],
+      "rank": 1,
+      "latency_ms": 348.42870000284165
+    }
+  ],
+  "scope": "12 authored queries against 6 authored documents; document-level recall; no answer-quality claim."
+}

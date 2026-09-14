@@ -1,0 +1,286 @@
+{
+  "provider": "local Qwen2.5-0.5B-Instruct",
+  "test_doubles": false,
+  "rag": {
+    "answer": "为了防止Unity应用在网络调用中被阻塞主线程，可以通过以下几种策略来实现：\n\n1. **优化性能**：\n   - 使用Profiler工具分析关键瓶颈，如CPU、GPU、内存分配和资源加载。\n   - 避免重复创建集合和对象池，减少不必要的GC压力。\n   - 在Update阶段避免频繁查找对象，尽量使用缓存机制。\n\n2. **提高渲染效率**：\n   - 减少不必要的透明物体绘制和材质数量。\n   - 确保网格复杂度适中，以减少渲染成本。\n   - 对于高分辨率的场景，考虑使用更高效的图像处理技术。\n\n3. **控制网络请求流量**：\n   - 使用LLM（语言模型）代替网络请求，确保其不会影响Unity主线程。\n   - 尽量减少网络请求的数量，特别是在低带宽环境下。\n\n4. **优化UI/UX设计**：\n   - 确保UI元素的响应速度较快，避免长时间的空闲状态导致用户体验下降。\n   - 提供清晰的反馈信息，如进度条、警告框等，帮助用户理解操作过程。\n\n5. **数据同步与压缩**：\n   - 如果需要实时数据传输",
+    "citations": [
+      {
+        "id": "9e0f3f9633137ad72bb7-0-0",
+        "doc_id": "9e0f3f9633137ad72bb7",
+        "title": "performance.md",
+        "page": null,
+        "start": 0,
+        "end": 304,
+        "text": "# Unity 性能排查\n\n本文是作品集自编测试资料。\n\nUnity 应用出现卡顿时，先用 Profiler 判断主要瓶颈在 CPU、GPU、内存分配还是资源加载。脚本每帧产生临时对象可能增加 GC 压力；可复用集合、对象池，并避免在 Update 中频繁查找对象。\n\nDraw Call、透明物体过绘、材质数量和网格复杂度会影响渲染成本。不要只凭 FPS 推断瓶颈，应同时记录目标设备、分辨率、测试场景、帧时间和测量方法。\n\nLLM 或网络请求不应阻塞 Unity 主线程。UnityWebRequest 可通过协程等待结果，显示加载状态、超时提示及重试按钮。收到响应后再在主线程更新 UI 和场景对象。\n",
+        "score": 0.032787,
+        "retrieval_mode": "lexical-hash+bm25+rrf",
+        "latency_ms": 61.94,
+        "citation_id": "S1"
+      },
+      {
+        "id": "89db8d9afc21f80fd4f1-0-0",
+        "doc_id": "89db8d9afc21f80fd4f1",
+        "title": "voice.md",
+        "page": null,
+        "start": 0,
+        "end": 254,
+        "text": "# 语音与数字人链路\n\n本文是作品集自编测试资料。\n\nSTT 把语音转换成文本，LLM 根据对话上下文生成回答，TTS 把回答合成为语音，Unity 负责播放、字幕与角色动画。端到端延迟应分段记录录音、识别、模型生成、合成和播放开始时间。\n\n浏览器语音识别需要浏览器支持和用户授权；语音合成可以使用系统声音。声音克隆是单独的能力，需要对应模型、声音样本与授权；系统 TTS 并不等同于声音克隆。\n\n当网络失败、识别结果为空或播放失败时，保留文字输入和字幕输出作为降级方式。多轮记忆应限定长度并提供删除入口。\n",
+        "score": 0.032258,
+        "retrieval_mode": "lexical-hash+bm25+rrf",
+        "latency_ms": 61.98,
+        "citation_id": "S2"
+      }
+    ],
+    "mode": "local-transformers",
+    "abstained": false,
+    "citation_valid": false,
+    "validation": "citation_ids_only"
+  },
+  "jobs": {
+    "extraction": {
+      "skills": {},
+      "mode": "local-transformers",
+      "validation": "exact-source-substring"
+    },
+    "ranking": [
+      {
+        "job": {
+          "id": "sample-ai-app",
+          "title": "AI应用开发工程师",
+          "company": "演示公司 A",
+          "description": "使用Python和FastAPI开发LLM应用，熟悉RAG与Docker。",
+          "required": [
+            "Python",
+            "FastAPI",
+            "LLM",
+            "RAG"
+          ],
+          "preferred": [
+            "Docker",
+            "MCP"
+          ],
+          "source_url": null,
+          "sample": true
+        },
+        "score": 60.0,
+        "matched": [
+          "FastAPI",
+          "Python",
+          "RAG"
+        ],
+        "missing_required": [
+          "LLM"
+        ],
+        "missing_preferred": [
+          "Docker",
+          "MCP"
+        ],
+        "evidence": {
+          "FastAPI": "I use Python, Unity and FastAPI to build RAG applications.",
+          "Python": "I use Python, Unity and FastAPI to build RAG applications.",
+          "RAG": "hon, Unity and FastAPI to build RAG applications."
+        },
+        "requirements_inferred": false,
+        "suggestions": [
+          "为 LLM 补充可验证的代码、项目或评测证据；掌握后再加入简历。"
+        ],
+        "score_meaning": "技能词条覆盖率，非录用概率；不评估学历、签证或工作年限。"
+      },
+      {
+        "job": {
+          "id": "sample-cv",
+          "title": "计算机视觉应用工程师",
+          "company": "演示公司 C",
+          "description": "Python、PyTorch、YOLO训练评测与OpenCV图像处理。",
+          "required": [
+            "Python",
+            "PyTorch",
+            "YOLO"
+          ],
+          "preferred": [
+            "OpenCV",
+            "Docker"
+          ],
+          "source_url": null,
+          "sample": true
+        },
+        "score": 25.0,
+        "matched": [
+          "Python"
+        ],
+        "missing_required": [
+          "PyTorch",
+          "YOLO"
+        ],
+        "missing_preferred": [
+          "Docker",
+          "OpenCV"
+        ],
+        "evidence": {
+          "Python": "I use Python, Unity and FastAPI to build RAG applications."
+        },
+        "requirements_inferred": false,
+        "suggestions": [
+          "为 PyTorch 补充可验证的代码、项目或评测证据；掌握后再加入简历。",
+          "为 YOLO 补充可验证的代码、项目或评测证据；掌握后再加入简历。"
+        ],
+        "score_meaning": "技能词条覆盖率，非录用概率；不评估学历、签证或工作年限。"
+      },
+      {
+        "job": {
+          "id": "sample-xr",
+          "title": "Unity XR工程师",
+          "company": "演示公司 B",
+          "description": "使用Unity和C#实现XR交互，具备HoloLens与语音AI集成经验。",
+          "required": [
+            "Unity",
+            "C#",
+            "XR"
+          ],
+          "preferred": [
+            "HoloLens",
+            "TTS",
+            "STT"
+          ],
+          "source_url": null,
+          "sample": true
+        },
+        "score": 22.2,
+        "matched": [
+          "Unity"
+        ],
+        "missing_required": [
+          "C#",
+          "XR"
+        ],
+        "missing_preferred": [
+          "HoloLens",
+          "STT",
+          "TTS"
+        ],
+        "evidence": {
+          "Unity": "I use Python, Unity and FastAPI to build RAG applications."
+        },
+        "requirements_inferred": false,
+        "suggestions": [
+          "为 C# 补充可验证的代码、项目或评测证据；掌握后再加入简历。",
+          "为 XR 补充可验证的代码、项目或评测证据；掌握后再加入简历。"
+        ],
+        "score_meaning": "技能词条覆盖率，非录用概率；不评估学历、签证或工作年限。"
+      },
+      {
+        "job": {
+          "id": "sample-infra",
+          "title": "大模型训练基础设施工程师",
+          "company": "演示公司 D",
+          "description": "C++、CUDA、Linux与分布式训练基础设施。",
+          "required": [
+            "C++",
+            "CUDA",
+            "Linux"
+          ],
+          "preferred": [
+            "PyTorch"
+          ],
+          "source_url": null,
+          "sample": true
+        },
+        "score": 0.0,
+        "matched": [],
+        "missing_required": [
+          "C++",
+          "CUDA",
+          "Linux"
+        ],
+        "missing_preferred": [
+          "PyTorch"
+        ],
+        "evidence": {},
+        "requirements_inferred": false,
+        "suggestions": [
+          "为 C++ 补充可验证的代码、项目或评测证据；掌握后再加入简历。",
+          "为 CUDA 补充可验证的代码、项目或评测证据；掌握后再加入简历。",
+          "为 Linux 补充可验证的代码、项目或评测证据；掌握后再加入简历。"
+        ],
+        "score_meaning": "技能词条覆盖率，非录用概率；不评估学历、签证或工作年限。"
+      }
+    ],
+    "trace": [
+      {
+        "tool": "extract_skills",
+        "output_count": 0
+      },
+      {
+        "tool": "rank_jobs",
+        "output_count": 4
+      },
+      {
+        "tool": "gap_analysis",
+        "status": "complete"
+      }
+    ],
+    "auto_apply": false
+  },
+  "agent": {
+    "answer": "已生成场景操作建议，确认后客户端才会执行。",
+    "session_id": "real-model-test",
+    "trace": [
+      {
+        "step": 1,
+        "tool": "propose_scene_action",
+        "arguments": {
+          "action": "rotate",
+          "target": "demo_cube",
+          "value": 45
+        },
+        "result": {
+          "status": "pending_confirmation",
+          "action_id": "3631c7db25e94cc48e985065f2e90ce6",
+          "action": {
+            "action": "rotate",
+            "target": "demo_cube",
+            "value": 45.0
+          },
+          "expires_in_seconds": 300
+        },
+        "planner": "local-transformers"
+      }
+    ],
+    "citations": [],
+    "pending_actions": [
+      {
+        "status": "pending_confirmation",
+        "action_id": "3631c7db25e94cc48e985065f2e90ce6",
+        "action": {
+          "action": "rotate",
+          "target": "demo_cube",
+          "value": 45.0
+        },
+        "expires_in_seconds": 300
+      }
+    ],
+    "mode": "local-transformers",
+    "stop_reason": "human_confirmation",
+    "latency_ms": 3876.89
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "action": {
+      "action": "rotate",
+      "target": "demo_cube",
+      "value": 45.0
+    }
+  },
+  "tts": {
+    "http_status": 200,
+    "bytes": 330788
+  },
+  "stt": {
+    "http_status": 200,
+    "result": {
+      "text": "Hello. This is the mixed reality assistant. Please confirm before rotating the cube.",
+      "language": "en",
+      "engine": "faster-whisper-tiny"
+    }
+  }
+}

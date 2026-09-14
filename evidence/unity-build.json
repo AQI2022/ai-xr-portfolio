@@ -1,0 +1,12 @@
+{
+  "editor": "2022.3.13f1c1",
+  "target": "Windows x64",
+  "build": "succeeded",
+  "binary_sha256": "a66906e6920513bdfc07e976005d92416f16b8e6e9ad6fe9f3b0f1b0328eb046",
+  "runtime": {
+    "success": true,
+    "rotation": 45.000003814697266,
+    "unchanged_before_confirmation": true
+  },
+  "scope": "Headless real Unity player with real FastAPI HTTP requests. Not a headset or graphics validation."
+}

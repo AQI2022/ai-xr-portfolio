@@ -1,0 +1,10 @@
+.git
+.venv
+data
+models
+runs
+logs
+unity
+evidence
+.env
+__pycache__

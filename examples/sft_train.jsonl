@@ -1,0 +1,32 @@
+{"question":"What is an XR spatial anchor?","answer":"A spatial anchor stores a pose relationship that keeps virtual content aligned with a physical location."}
+{"question":"How should tracking loss be handled?","answer":"Pause precise interaction, explain tracking loss to the user, and resume after stable relocalization."}
+{"question":"What is the difference between local and world position in Unity?","answer":"Local position is relative to the parent transform. World position is relative to the scene origin."}
+{"question":"How do you investigate Unity frame drops?","answer":"Use the Profiler to distinguish CPU, GPU, allocation and loading costs before choosing an optimization."}
+{"question":"Why avoid blocking network calls on the Unity main thread?","answer":"Blocking calls delay rendering and input. Use asynchronous requests and update scene objects on the main thread."}
+{"question":"What does RAG stand for?","answer":"Retrieval augmented generation retrieves relevant source passages and supplies them as context for a language model."}
+{"question":"Why retain citations in a RAG answer?","answer":"Citations let readers inspect the evidence supporting a claim and help developers diagnose retrieval failures."}
+{"question":"What does Recall at K measure?","answer":"It measures the fraction of relevant items retrieved within the top K results."}
+{"question":"What does a reranker do?","answer":"A reranker rescores candidate passages against the query to improve relevance ordering."}
+{"question":"What should an assistant do without evidence?","answer":"It should state that evidence is insufficient and ask for relevant information instead of inventing an answer."}
+{"question":"What is a tool calling schema?","answer":"A schema defines allowed tool names, argument fields and data types so calls can be validated before execution."}
+{"question":"Why require confirmation for scene changes?","answer":"Confirmation lets the user review a proposed action before the client changes the scene."}
+{"question":"How should action tokens be protected?","answer":"Bind tokens to the session, set an expiration time and consume each token only once."}
+{"question":"What is STT?","answer":"Speech to text converts an audio signal into a textual transcript."}
+{"question":"What is TTS?","answer":"Text to speech synthesizes spoken audio from written text."}
+{"question":"Is system TTS the same as voice cloning?","answer":"No. System TTS uses installed voices. Voice cloning requires a suitable model and authorized voice samples."}
+{"question":"What does LoRA train?","answer":"LoRA trains low rank adapter matrices while keeping the base model weights frozen."}
+{"question":"How is QLoRA different from LoRA?","answer":"QLoRA combines adapter training with a quantized base model, subject to hardware and backend support."}
+{"question":"Why mask prompt tokens during supervised fine tuning?","answer":"Masking prompt tokens restricts the loss to the target answer, so the model learns the response task."}
+{"question":"Why keep a separate validation split?","answer":"A separate validation split estimates behavior on examples excluded from parameter updates."}
+{"question":"What does decreasing training loss prove?","answer":"It shows improved fit to training examples, but it does not alone prove better generalization."}
+{"question":"What information belongs in a detection benchmark?","answer":"Record the data split, model weights, image size, device, precision, recall, mAP and measurement method."}
+{"question":"How should YOLO labels be represented?","answer":"Each row contains a class index and normalized box center x, center y, width and height."}
+{"question":"Is single image FPS equal to video throughput?","answer":"No. Reciprocal single image latency excludes some capture and display costs and is not a full video benchmark."}
+{"question":"如何保证工具调用可控？","answer":"限定工具白名单并验证参数，对场景修改设置人工确认，记录调用结果和停止原因。"}
+{"question":"知识库引用存在就能证明答案正确吗？","answer":"不能。引用格式校验只证明编号存在，还需要检查来源是否支持答案中的具体断言。"}
+{"question":"如何将AI服务接入Unity？","answer":"通过异步HTTP请求发送文本和场景状态，解析结构化结果，再在主线程更新字幕、语音与三维对象。"}
+{"question":"如何评估垃圾目标检测？","answer":"固定独立验证集，记录Precision、Recall、mAP以及设备配置和推理延迟，避免用训练集指标冒充泛化表现。"}
+{"question":"What does BM25 retrieve?","answer":"BM25 ranks documents using query term matches, document length and term frequency statistics."}
+{"question":"Why combine keyword and vector retrieval?","answer":"Keyword retrieval preserves exact terms while vector retrieval can capture related meaning. Ranking fusion combines their strengths."}
+{"question":"How should a Git repository handle model keys?","answer":"Read keys from environment variables and exclude local environment files from version control."}
+{"question":"What makes a project reproducible?","answer":"Versioned code, explicit dependencies, fixed data splits, deterministic seeds and recorded commands make results easier to reproduce."}

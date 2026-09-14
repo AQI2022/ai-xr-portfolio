@@ -1,0 +1,6 @@
+[
+  {"id":"sample-ai-app","title":"AI应用开发工程师","company":"演示公司 A","description":"使用Python和FastAPI开发LLM应用，熟悉RAG与Docker。","required":["Python","FastAPI","LLM","RAG"],"preferred":["Docker","MCP"],"sample":true},
+  {"id":"sample-xr","title":"Unity XR工程师","company":"演示公司 B","description":"使用Unity和C#实现XR交互，具备HoloLens与语音AI集成经验。","required":["Unity","C#","XR"],"preferred":["HoloLens","TTS","STT"],"sample":true},
+  {"id":"sample-cv","title":"计算机视觉应用工程师","company":"演示公司 C","description":"Python、PyTorch、YOLO训练评测与OpenCV图像处理。","required":["Python","PyTorch","YOLO"],"preferred":["OpenCV","Docker"],"sample":true},
+  {"id":"sample-infra","title":"大模型训练基础设施工程师","company":"演示公司 D","description":"C++、CUDA、Linux与分布式训练基础设施。","required":["C++","CUDA","Linux"],"preferred":["PyTorch"],"sample":true}
+]

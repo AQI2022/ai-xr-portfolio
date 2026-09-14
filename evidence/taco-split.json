@@ -1,0 +1,276 @@
+{
+  "dataset": "TACO mini",
+  "source": "https://github.com/pedropro/TACO",
+  "annotation_sha256": "ac1ec605c9e1fcda767970de3457c69b4a43b62c02aca8c4c80f51d1b5ae8449",
+  "seed": 42,
+  "image_count": 32,
+  "train_images": 24,
+  "validation_images": 8,
+  "class_names": [
+    "bottle",
+    "can",
+    "cup",
+    "bag",
+    "other_litter"
+  ],
+  "licenses": [],
+  "manifest": [
+    {
+      "image_id": 1303,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/32931623567_1f18fb2679_z.jpg",
+      "license_id": "CC",
+      "sha256": "46bf823198bba1c5eaa542021a333e329635b18d8c6195c8ceeea150df6323a1",
+      "boxes": 1
+    },
+    {
+      "image_id": 397,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/05/21/sDup0ZtDT6PDPNHhAelQhtuDzKJol0QtTnBqOEvZ.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "6b4ec6a4034b853441490c4df487a258fb1128217dc8bf7fbd8bc028d264e4bd",
+      "boxes": 1
+    },
+    {
+      "image_id": 386,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/13/D2Fx6kd3yko1RTpv0Hk384xX9ZAPKErWA93tE50J.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "c2f4d3b7bb292b4771923c2c45c9085b910dbd91d834be598015f932857ac3bb",
+      "boxes": 12
+    },
+    {
+      "image_id": 549,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/376/GUuRh52FfBsDEVLpa1hIpbS4fSoMqjVwxBWn6D8o.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "b38310735bc8c10fe9efc5763ab60d9e22b4dd5c744afc90df85f723f2ab0cf7",
+      "boxes": 2
+    },
+    {
+      "image_id": 597,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/764/nk6kkJjUVtD58kaq1G7JKHZtHhsFQ40QZribBtuX.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "3d2c21092229bf46fc2382578f8dcdc4d7dbbefd520e242e5826c56ea1077da5",
+      "boxes": 1
+    },
+    {
+      "image_id": 1113,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/47066779864_5e560efcc1_z.jpg",
+      "license_id": null,
+      "sha256": "139e703a130f81797254233a18cf255c8ca6a68df6c94c0cc90d93a1c6b2da53",
+      "boxes": 4
+    },
+    {
+      "image_id": 1365,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/48497546196_16e281813f_z.jpg",
+      "license_id": "CC",
+      "sha256": "a3cb58c5ffaad19cfb0cc67709d2267ffabc680dafa8cba24829dff682d863d1",
+      "boxes": 28
+    },
+    {
+      "image_id": 134,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/48694142306_633b3d637f_z.jpg",
+      "license_id": "CC",
+      "sha256": "27ad747ede50b5a578780721da9707cf3a9ba677585f509aa3069bff8e5b5977",
+      "boxes": 3
+    },
+    {
+      "image_id": 1117,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/32912105857_bd09626d70_z.jpg",
+      "license_id": null,
+      "sha256": "7463b739759e2b4ab9c3b266ae522d8438e0b8f2f5cc49aebfb79df2198662ad",
+      "boxes": 2
+    },
+    {
+      "image_id": 1164,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/33978955328_e0958620b2_z.jpg",
+      "license_id": null,
+      "sha256": "ea42c0186758911bfb7480b17031088a18b0761fb3b2218dae118229d66507f8",
+      "boxes": 1
+    },
+    {
+      "image_id": 213,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/48693696003_e3d62c9515_z.jpg",
+      "license_id": "CC",
+      "sha256": "f5858ed2df2e8397f76e55abfba908751c24d3236baf55cb89d2bc2b5cc2de0d",
+      "boxes": 2
+    },
+    {
+      "image_id": 1181,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/32912148117_b8991ed785_z.jpg",
+      "license_id": null,
+      "sha256": "57dcb15ee90bb3d6544e1bbcf9be1d8ab129eec31169a64d8b759bc8a6993a02",
+      "boxes": 3
+    },
+    {
+      "image_id": 789,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/47803587912_3edc52e913_z.jpg",
+      "license_id": null,
+      "sha256": "d94bf17db655b29b49b584210ebc45346b5472717a1f3e482c34a085e9c21dac",
+      "boxes": 2
+    },
+    {
+      "image_id": 760,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/32911601367_8f774fa8a4_z.jpg",
+      "license_id": null,
+      "sha256": "fb1b449bc36dd4f3f0fc9d6010dd372c30e2f38967cf00e6c94ac02015253975",
+      "boxes": 1
+    },
+    {
+      "image_id": 510,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/21/0EzH5ztdVUTapxUs6VguLVfjgSKRD5aaRs3jcZuT.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "c5d91b55826e63c60ccb2b7f2ec2bfeb87d802e5308846da6e34c2dac4ef848c",
+      "boxes": 2
+    },
+    {
+      "image_id": 444,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/17/0fb36NSU5KbLHR2pGlVkzb3k5a87u7fzBGemYvNk.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "7e842a8e9d5617ace28e0c466721d4b04dda78ff644c6ae7519e64130d4f26bb",
+      "boxes": 2
+    },
+    {
+      "image_id": 705,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/40889049683_f2da7a20d2_z.jpg",
+      "license_id": null,
+      "sha256": "30621c2905669656b141b41c9d23d1b9e9f495ec67422bf43746f70d5e4e2dc5",
+      "boxes": 3
+    },
+    {
+      "image_id": 1007,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/47066706694_93b01b5108_z.jpg",
+      "license_id": null,
+      "sha256": "e7025248d68b026d46388e95aac6514f9487979b94fc3aa3f763b87bd924995f",
+      "boxes": 3
+    },
+    {
+      "image_id": 785,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/47066308414_c395d0463f_z.jpg",
+      "license_id": null,
+      "sha256": "5f268a29f51481ed1ff4a5fcc9dc589d8e584cc9505aab516149fe698ebe9e75",
+      "boxes": 2
+    },
+    {
+      "image_id": 632,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/24/ncbp4iYxkLCkKYg6iJoR0cRIPQDssHK7UezcrFhC.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "8aa895a62edd2a9a666bf8ad9625db65033d7cd9b117aa159d7276f31bd356d8",
+      "boxes": 4
+    },
+    {
+      "image_id": 1425,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/48661621677_3fd765c2fe_z.jpg",
+      "license_id": "CC",
+      "sha256": "80ad357ba6f5e6dd79af0b43a9fa0f2a3ba690e3024b2e54cc28e8224671bf7c",
+      "boxes": 2
+    },
+    {
+      "image_id": 550,
+      "split": "train",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/05/04/AbChskYC4TDXQlsCdxslDiFqSzwR4N8wCo4C7qgL.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "9ff2448015011251fdc1fb79f7933468641bbc8a25fdfb74e462fe035e90ac52",
+      "boxes": 1
+    },
+    {
+      "image_id": 68,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/46939272735_43c98a9d25_z.jpg",
+      "license_id": null,
+      "sha256": "918079e65f37e919c2b174f4a0a0f7696a89668744545291d216ba1836f0480a",
+      "boxes": 2
+    },
+    {
+      "image_id": 1349,
+      "split": "train",
+      "source_url": "https://farm66.staticflickr.com/65535/48580502787_9c90b9360f_z.jpg",
+      "license_id": "CC",
+      "sha256": "1e71aca521d83dab1dc942057fb4e87e15c0dda2fdddde1457b1a39c8382c3b3",
+      "boxes": 1
+    },
+    {
+      "image_id": 558,
+      "split": "val",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/05/04/hD31a1mgnybc9aTz1XAzXtfv9jjq97oeLQk40QKf.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "2d703e8d1bb9495fb7d547f60a47f5ea0954e7dd2bb7aac1def3770976c6587e",
+      "boxes": 1
+    },
+    {
+      "image_id": 762,
+      "split": "val",
+      "source_url": "https://farm66.staticflickr.com/65535/40889085893_59ff3c3891_z.jpg",
+      "license_id": null,
+      "sha256": "5cd278b98e3377eabcc6b37cea911c27325b856053552e2c174022ad9e802c71",
+      "boxes": 1
+    },
+    {
+      "image_id": 1289,
+      "split": "val",
+      "source_url": "https://farm66.staticflickr.com/65535/40889729373_f95d8ccd3f_z.jpg",
+      "license_id": null,
+      "sha256": "f5921a3ec8898e57dc83356ed4a96e934fe88e5dacb01d034081ee266692301c",
+      "boxes": 2
+    },
+    {
+      "image_id": 640,
+      "split": "val",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/30/pFhMGDhpRUnentO2m0cbvORYlKK22gsH4qeseaFo.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "64fa448489235373ed68ce7f0110202cdb580e8bc345a82d927c8695e0709a3f",
+      "boxes": 1
+    },
+    {
+      "image_id": 133,
+      "split": "val",
+      "source_url": "https://farm66.staticflickr.com/65535/48693802483_610d1c8d38_z.jpg",
+      "license_id": "CC",
+      "sha256": "b5279fed05f85bce8fb110174bccd5c8e573156b0ae9c287e76ec78717c7b1c4",
+      "boxes": 1
+    },
+    {
+      "image_id": 315,
+      "split": "val",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/08/qv6BIDMIlyAKJnVXmiiwJQfmf2u3aVefVghC2TFD.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "d6a4b19f49ace665563025e5aacce718d6512538f8e22749956e982aa97806a4",
+      "boxes": 1
+    },
+    {
+      "image_id": 346,
+      "split": "val",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/02/k3PIDG1N9anhyUFjfkuWpNxhcL6nyBd3BrIVcj3k.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "f7c96543435aedfab09b2bca9b14a3f0be5cd1f54079bcf49f4a8b9520267346",
+      "boxes": 1
+    },
+    {
+      "image_id": 373,
+      "split": "val",
+      "source_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/13/D4GB3pt5YtfRGTuHm0ivQn6s8dPasRvqGmvqeWG5.jpeg",
+      "license_id": "ODBL (c) OpenLitterMap & Contributors",
+      "sha256": "eeced70770e9958be6619301a3d8a99ac6a8a4ebd1abdb4c7d7d8a35905e824b",
+      "boxes": 1
+    }
+  ],
+  "scope": "Small real litter dataset, image-disjoint split. No independent test set or generalization claim."
+}
